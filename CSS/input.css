@@ -1,10 +1,30 @@
+/* General CSS */
+
 body {
     font-family: brandon-grotesque, sans-serif;
+    background: aliceblue;
 }
 
 .content {
     margin-bottom: 100px;
 }
+
+/* Carousel */
+
+.carouselExampleIndicators.position-relative {
+    position: relative;
+}
+
+.carouselExampleIndicators .carousel-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* Navbar CSS */
 
 #mainNavbar .navbar-brand {
     color: #EA1C2C;
@@ -38,41 +58,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
-.btn {
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: .5s;
-}
-
-.btn-primary {
-    color: #FFFFFF;
-}
-
-.btn-square {
-    width: 36px;
-    height: 36px;
-}
-
-.btn-sm-square {
-    width: 28px;
-    height: 28px;
-}
-
-.btn-lg-square {
-    width: 46px;
-    height: 46px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-}
-
 
 .navbar.scrolled {
     background-color: rgb(1, 37, 69);
@@ -114,18 +99,7 @@ body {
     order: -1;
 }
 
-.carouselExampleIndicators.position-relative {
-    position: relative;
-}
-
-.carouselExampleIndicators .carousel-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
+/* Flaticons */
 [class^=flaticon-]:before,
 [class*=" flaticon-"]:before,
 [class^=flaticon-]:after,
@@ -191,65 +165,44 @@ body {
     }
 }
 
+/* Buttons CSS*/
 
-.team-carousel .owl-nav {
-    position: absolute;
-    width: 50px;
-    height: 160px;
-    top: calc(50% - 80px);
-    right: 0;
-    z-index: 1;
+.btn {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .5s;
 }
 
-.team-carousel .owl-nav .owl-prev,
-.team-carousel .owl-nav .owl-next {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-primary {
     color: #FFFFFF;
-    background: var(--primary);
-    font-size: 22px;
-    transition: .5s;
 }
 
-.team-carousel .owl-nav .owl-prev:hover,
-.team-carousel .owl-nav .owl-next:hover {
-    color: var(--dark);
+.btn-square {
+    width: 36px;
+    height: 36px;
 }
 
-.team-item img {
-    transition: .5s;
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
 }
 
-.team-item:hover img {
-    transform: scale(1.2);
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
 }
 
-.team-item .team-overlay {
-    position: absolute;
-    top: 45px;
-    right: 45px;
-    bottom: 45px;
-    left: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(122, 183, 48, .8);
-    transition: .5s;
-    opacity: 0;
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
 }
 
-.team-item:hover .team-overlay {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-}
+
+/* Services CSS */
 
 
 .new-services {
@@ -322,6 +275,9 @@ body {
 
 }
 
+/* Products CSS */
+
+
 h5.text-uppercase.mb-3 {
     font-weight: bold;
 }
@@ -381,6 +337,7 @@ h5.text-uppercase.mb-3 {
 
 
 
+/* Loading CSS */
 
 .loader-wrapper {
     width: 100%;
@@ -453,4 +410,137 @@ h5.text-uppercase.mb-3 {
     100% {
         height: 0%;
     }
+}
+
+/* Team CSS */
+
+.gtco-testimonials {
+    position: relative;
+    margin-top: 30px;
+
+    .h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 50px;
+    }
+
+    .owl-stage-outer {
+        padding: 30px 0;
+    }
+
+    .owl-nav {
+        display: none;
+    }
+
+    .owl-dots {
+        text-align: center;
+
+        .span {
+            position: relative;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: block;
+            background: #fff;
+            border: 2px solid #01b0f8;
+            margin: 0 5px;
+        }
+
+        .active {
+            box-shadow: none;
+
+            .span {
+                background: #01b0f8;
+                box-shadow: none;
+                height: 12px;
+                width: 12px;
+                margin-bottom: -1px;
+            }
+        }
+    }
+
+    .card {
+        background: #fff;
+        box-shadow: 0 8px 30px -7px #c9dff0;
+        margin: 0 20px;
+        padding: 0 10px;
+        border-radius: 20px;
+        border: 0;
+
+        .card-img-top {
+            max-width: 100px;
+            border-radius: 50%;
+            margin: 15px auto 0;
+            box-shadow: 0 8px 20px -4px #95abbb;
+            width: 100px;
+            height: 100px;
+        }
+
+        .h5 {
+            color: #01b0f8;
+            font-size: 21px;
+            line-height: 1.3;
+
+            .span {
+                font-size: 18px;
+                color: #666666;
+            }
+        }
+
+        .p {
+            font-size: 18px;
+            color: #555;
+            padding-bottom: 15px;
+        }
+    }
+
+    .active {
+        opacity: 0.5;
+        transition: all 0.3s;
+    }
+
+    .center {
+        opacity: 1;
+
+        .h5 {
+            font-size: 24px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        .card-img-top {
+            max-width: 100%;
+            height: 120px;
+            width: 120px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .gtco-testimonials {
+        margin-top: 20px;
+    }
+}
+
+.owl-carousel {
+    .owl-nav button {
+
+        &.owl-next,
+        &.owl-prev {
+            outline: 0;
+        }
+    }
+
+    .button.owl-dot {
+        outline: 0;
+    }
+}
+
+.gtco-testimonials>h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
 }
