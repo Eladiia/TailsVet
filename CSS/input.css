@@ -2,7 +2,6 @@
 
 body {
     font-family: brandon-grotesque, sans-serif;
-    background: aliceblue;
 }
 
 .content {
@@ -75,7 +74,8 @@ body {
 }
 
 .carousel-caption p {
-    background: #8fc93c;
+    background: var(--primary);
+    ;
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 300;
@@ -106,12 +106,12 @@ body {
 }
 
 .carousel-action .btn-success {
-    background: #8fc93c;
+    background: var(--primary);
     border: none;
 }
 
 .carousel-action .btn-success:hover {
-    background: #87bd35;
+    background: var(--primary);
 }
 
 .carousel-indicators li,
@@ -651,4 +651,45 @@ h5.text-uppercase.mb-3 {
     font-size: 40px;
     margin-bottom: 50px;
     text-align: center;
+}
+
+
+/* Logo test */
+
+
+.section-header h2 {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+#clients {
+    padding: 60px 0;
+    background-color: transparent;
+}
+
+.clients-wrap {
+    margin-bottom: 30px;
+}
+
+.client-logo {
+    padding: 20x;
+    /* Adjust padding for consistent spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+    height: 200px;
+    /* Set a specific height */
+}
+
+.client-logo img {
+    max-height: 60%;
+    max-width: 60%;
+    object-fit: contain;
+    /* Use object-fit to control image scaling */
+    transition: all 0.4s ease-in-out;
 }
