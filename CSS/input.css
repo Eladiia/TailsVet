@@ -1,5 +1,4 @@
 /* General CSS */
-
 body {
     font-family: brandon-grotesque, sans-serif;
 }
@@ -128,8 +127,8 @@ body {
 }
 
 .carousel-indicators li.active {
-    background: #8fc93c;
-    border-color: #8fc93c;
+    background: var(--primary);
+    border-color: var(--primary);
 }
 
 /* Navbar CSS */
